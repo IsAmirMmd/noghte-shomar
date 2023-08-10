@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 const oneDots = ["ب", "ج", "خ", "ذ", "ز", "ض", "ظ", "غ", "ف", "ن"];
@@ -8,6 +8,7 @@ const conditionalDots = ["ی"];
 let totalDot = 0;
 
 function App() {
+  const [dot, setDot] = useState(0);
   const [text, setText] = useState("");
 
   const changeHandler = ({ target }) => {
@@ -20,11 +21,12 @@ function App() {
       alert("دادا یچی بنویس که");
       return;
     }
-    console.log(countHandler(text));
+    countHandler(text);
   };
 
   const countHandler = (text) => {
     totalDot = 0;
+
     for (let i = 0; i < text.length; i++) {
       if (oneDots.includes(text[i])) totalDot += 1;
       else if (conditionalDots.includes(text[i])) {
@@ -32,7 +34,8 @@ function App() {
       } else if (twoDots.includes(text[i])) totalDot += 2;
       else if (threeDots.includes(text[i])) totalDot += 3;
     }
-    return totalDot;
+
+    setDot(totalDot);
   };
 
   return (
@@ -55,7 +58,7 @@ function App() {
       </form>
       <div className="counter">
         <p>تعداد نقطه ها:</p>
-        <span className="dot-count">{totalDot}</span>
+        <span className="dot-count">{dot}</span>
       </div>
       <footer>
         made with <span>♥</span> by <span>IsAmirMmd</span>
