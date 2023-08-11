@@ -96,11 +96,11 @@ function App() {
         ساخته شده با <span>☕</span> توسط
         <a href="https://github.com/IsAmirMmd">آقا امیر</a>
         <svg
-          height="24"
+          height="20"
           aria-hidden="true"
           viewBox="0 0 16 16"
           version="1.1"
-          width="24"
+          width="20"
           data-view-component="true"
           fill="#4a044e"
         >
