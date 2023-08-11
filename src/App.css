@@ -67,8 +67,9 @@ footer a {
   font-weight: 600;
 }
 .popup-modal {
-  position: absolute;
-  background-color: #fff;
+  z-index: 2;
+  position: fixed;
+  background-color: #f5f5f5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -77,7 +78,7 @@ footer a {
   display: flex;
   flex-direction: column;
   height: 150px;
-  box-shadow: 0 0 5px #4a044e5c;
+  box-shadow: 0 0 5px #0000005c;
 
 }
 .popup-header {
@@ -87,7 +88,7 @@ footer a {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  color: #4a044e;
+  color: red;
   font-size: 1.2rem;
   height: 3rem;
   background-color: #f3e8ff;
@@ -96,6 +97,15 @@ footer a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  color: #4a044e;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.popup-error p{
+  width: 100%;
+  display: block;
+  margin-top: 1.25rem;
 }
 .popup-error .btn {
   display: block;

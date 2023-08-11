@@ -57,7 +57,6 @@ function App() {
         <div className="popup-header">اخطار!</div>
         <div className="popup-error">
           <p>عامو یچی بنویس</p>
-
           <button type="button" onClick={() => setError(false)} className="btn">
             حله
           </button>
