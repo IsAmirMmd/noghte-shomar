@@ -8,5 +8,7 @@
 ## راه‌اندازی و نصب
 
 <h3>مراحل زیر رو به ترتیب پیش برید:</h3>
-1. git clone
-2. npm start
+1.  git clone <code>https://github.com/IsAmirMmd/noghte-shomar.git</code> <br />
+2.  npm start <br />
+3.  open http://fun.isamirmmd.ir in any device
+
