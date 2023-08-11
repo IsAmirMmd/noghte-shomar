@@ -61,7 +61,7 @@ function App() {
         <span className="dot-count">{dot}</span>
       </div>
       <footer>
-        ساخته شده با <span>☕</span> توسط{" "}
+        ساخته شده با <span>☕</span> توسط
         <a href="https://github.com/IsAmirMmd">آقا امیر</a>
         <svg
           height="16"
