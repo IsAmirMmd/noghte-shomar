@@ -8,6 +8,7 @@ const conditionalDots = ["ی"];
 let totalDot = 0;
 
 function App() {
+  // converting latin number to persian number
   useEffect(() => {
     ConvertNumberToPersion();
   }, []);
@@ -15,6 +16,7 @@ function App() {
   const [dot, setDot] = useState(0);
   const [text, setText] = useState("");
 
+  // rendering number after dot counting
   useEffect(() => {
     ConvertNumberToPersion();
   }, [dot]);
