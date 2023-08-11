@@ -47,6 +47,8 @@
 }
 .counter {
   margin: 15px 0;
+  display: flex;
+  gap: 10px;
 }
 .App footer {
   width: 100%;
