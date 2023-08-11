@@ -14,6 +14,7 @@ function App() {
   }, []);
 
   const [dot, setDot] = useState(0);
+  const [error, setError] = useState(false);
   const [text, setText] = useState("");
 
   // rendering number after dot counting
@@ -28,10 +29,11 @@ function App() {
   const countDotSubmit = (e) => {
     e.preventDefault();
     if (!text) {
-      alert("عامو یچی بنویس که");
       setDot(0);
+      setError(true);
       return;
     }
+    setError(false);
     countHandler(text);
   };
 
@@ -49,8 +51,26 @@ function App() {
     setDot(totalDot);
   };
 
+  const errorModal = () => {
+    return (
+      <div className="popup-modal">
+        <div className="popup-header">اخطار!</div>
+        <div className="popup-error">
+          <p>عامو یچی بنویس</p>
+
+          <button type="button" onClick={() => setError(false)} className="btn">
+            حله
+          </button>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="App">
+      {/* floating window ↓ */}
+      {error && errorModal()}
+
       <h1>
         خب عزیز دلم!
         <span>سلام</span>
