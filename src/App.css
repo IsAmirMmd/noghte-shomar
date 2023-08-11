@@ -8,8 +8,13 @@
   align-items: center;
 }
 .App h1 {
+  margin-top: 20px;
+  margin-bottom: 5px;
   font-size: 26px;
-  margin-bottom: 10px;
+}
+.p-content {
+  margin-bottom: 20px;
+  font-size: 1.125rem;
 }
 .App textarea {
   border: 0;
@@ -18,8 +23,8 @@
   border-radius: 5px;
   padding: 10px 15px;
   font-size: 1rem;
-  min-width: 250px;
-  max-width: 350px;
+  min-width: 300px;
+  max-width: 400px;
   min-height: 50vh;
   resize: none;
   color: #4a044e;
@@ -46,9 +51,9 @@
 .App footer {
   width: 100%;
   background-color: #ddd6fe;
-  padding: 15px;
+  padding: 16px;
   margin-top: auto;
-  color: #4a044e;
+  color: #242424;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,5 +61,6 @@
 }
 footer a {
   text-decoration: none;
-  color: #717171;
+  color: #4a044e;
+  font-weight: 600;
 }
